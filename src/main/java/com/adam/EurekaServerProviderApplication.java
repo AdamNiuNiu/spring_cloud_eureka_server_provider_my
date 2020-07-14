@@ -1,4 +1,4 @@
-package com.adam.eureka_server_provider;
+package com.adam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

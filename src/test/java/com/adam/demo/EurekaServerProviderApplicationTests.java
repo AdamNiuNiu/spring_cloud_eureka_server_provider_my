@@ -1,4 +1,4 @@
-package com.adam.eureka_server_provider;
+package com.adam.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

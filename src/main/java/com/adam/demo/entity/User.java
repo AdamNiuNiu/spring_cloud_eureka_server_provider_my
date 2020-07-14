@@ -1,4 +1,4 @@
-package com.adam.eureka_server_provider.entity;
+package com.adam.demo.entity;
 
 
 import lombok.Data;

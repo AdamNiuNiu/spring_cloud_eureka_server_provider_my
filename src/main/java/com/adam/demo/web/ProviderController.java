@@ -1,6 +1,6 @@
-package com.adam.eureka_server_provider.web;
+package com.adam.demo.web;
 
-import com.adam.eureka_server_provider.entity.User;
+import com.adam.demo.entity.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
