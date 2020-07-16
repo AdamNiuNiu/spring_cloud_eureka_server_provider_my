@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
 import java.util.Date;
+import java.util.List;
 
 public interface XcTaskRepository extends JpaRepository<XcTask,String> {
 
@@ -25,4 +26,5 @@ public interface XcTaskRepository extends JpaRepository<XcTask,String> {
     @Modifying
     @Query("update XcTask t set t.version = :version+1 where t.id = :id and t.version = :version")
     int updateTaskVersion(@Param(value = "id") String id,@Param(value = "version") int version);
+
 }

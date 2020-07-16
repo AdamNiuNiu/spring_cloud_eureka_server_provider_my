@@ -16,6 +16,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@Transactional
 @Service
 public class TaskService {
 
@@ -74,5 +75,10 @@ public class TaskService {
             xcTaskHisRepository.save(xcTaskHis);
             xcTaskRepository.delete(xcTask);
         }
+    }
+
+
+    public List<XcTaskHis> getXctaskhis(String id){
+        return xcTaskHisRepository.getXctaskhis(id);
     }
 }

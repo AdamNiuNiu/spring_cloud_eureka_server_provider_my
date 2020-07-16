@@ -38,7 +38,7 @@ public class ChooseCourseTask {
     }
 
 
-    @Scheduled(cron="0/3 * * * * *")
+    @Scheduled(cron="0/30 * * * * *")
     //定时发送加选课任务
     public void sendChoosecourseTask() {
         //得到1分钟之前的时间
