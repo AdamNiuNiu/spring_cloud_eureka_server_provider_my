@@ -10644,3 +10644,652 @@ Caused by: java.net.ConnectException: Connection refused: connect
 2020-07-16 10:43:26.502|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.unregister() 952|Unregistering ...
 2020-07-16 10:43:26.514|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.unregister() 954|DiscoveryClient_EUREKA-PROVIDER-DEMO-MY/eureka-provider-demo-my:31002 - deregister  status: 200
 2020-07-16 10:43:26.530|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.shutdown() 941|Completed shut down of DiscoveryClient
+2020-07-16 16:02:15.328|INFO |main|main|com.ctrip.framework.foundation.internals.provider.DefaultApplicationProvider.initAppId() 85|App ID is set to user-service by app.id property from System Property
+2020-07-16 16:02:15.341|INFO |main|main|com.ctrip.framework.foundation.internals.provider.DefaultServerProvider.initEnvType() 130|Environment is set to null. Because it is not available in either (1) JVM system property 'env', (2) OS env variable 'ENV' nor (3) property 'env' from the properties InputStream.
+2020-07-16 16:02:15.398|INFO |main|main|com.ctrip.framework.apollo.internals.DefaultMetaServerProvider.initMetaServerAddress() 42|Located meta services from apollo.meta configuration: http://192.168.106.129:8080!
+2020-07-16 16:02:15.402|INFO |main|main|com.ctrip.framework.apollo.core.MetaDomainConsts.initMetaServerAddress() 93|Located meta server address http://192.168.106.129:8080 for env UNKNOWN from com.ctrip.framework.apollo.internals.DefaultMetaServerProvider
+2020-07-16 16:02:34.659|INFO |main|main|com.adam.EurekaServerProviderApplication.logStartupProfileInfo() 651|No active profile set, falling back to default profiles: default
+2020-07-16 16:02:36.117|WARN |main|main|org.mybatis.spring.mapper.ClassPathMapperScanner.doScan() 166|No MyBatis mapper was found in '[com.adam]' package. Please check your configuration.
+2020-07-16 16:02:36.394|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected() 249|Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 16:02:36.395|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn() 127|Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-07-16 16:02:36.512|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn() 187|Finished Spring Data repository scanning in 106ms. Found 2 JPA repository interfaces.
+2020-07-16 16:02:36.533|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationDelegate.multipleStoresDetected() 249|Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-16 16:02:36.534|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn() 127|Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-16 16:02:36.561|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate() 348|Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.adam.demo.dao.XcTaskHisRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-07-16 16:02:36.562|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate() 348|Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.adam.demo.dao.XcTaskRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-07-16 16:02:36.562|INFO |main|main|org.springframework.data.repository.config.RepositoryConfigurationDelegate.registerRepositoriesIn() 187|Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2020-07-16 16:02:36.830|INFO |main|main|org.springframework.context.annotation.ConfigurationClassPostProcessor.enhanceConfigurationClasses() 403|Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2020-07-16 16:02:36.988|INFO |main|main|org.springframework.cloud.context.scope.GenericScope.setSerializationId() 295|BeanFactory id=9537064e-cce3-33b1-8df1-87f82539fc9b
+2020-07-16 16:02:37.132|WARN |main|main|org.springframework.boot.context.properties.PropertySourcesDeducer.getSinglePropertySourcesPlaceholderConfigurer() 66|Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+2020-07-16 16:02:37.656|INFO |main|main|org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize() 108|Tomcat initialized with port(s): 31002 (http)
+2020-07-16 16:02:37.668|INFO |main|main|org.apache.coyote.http11.Http11NioProtocol.log() 173|Initializing ProtocolHandler ["http-nio-31002"]
+2020-07-16 16:02:37.669|INFO |main|main|org.apache.catalina.core.StandardService.log() 173|Starting service [Tomcat]
+2020-07-16 16:02:37.669|INFO |main|main|org.apache.catalina.core.StandardEngine.log() 173|Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-16 16:02:37.895|INFO |main|main|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log() 173|Initializing Spring embedded WebApplicationContext
+2020-07-16 16:02:37.895|INFO |main|main|org.springframework.web.context.ContextLoader.prepareWebApplicationContext() 284|Root WebApplicationContext: initialization completed in 3214 ms
+2020-07-16 16:02:38.182|INFO |main|main|org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler.initialize() 181|Initializing ExecutorService
+2020-07-16 16:02:38.185|INFO |main|main|org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler.initialize() 181|Initializing ExecutorService 'taskScheduler'
+2020-07-16 16:02:38.197|INFO |main|main|com.zaxxer.hikari.HikariDataSource.getConnection() 110|HikariPool-1 - Starting...
+2020-07-16 16:02:38.199|WARN |main|main|com.zaxxer.hikari.util.DriverDataSource.<init>() 70|Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2020-07-16 16:02:38.380|INFO |main|main|com.zaxxer.hikari.HikariDataSource.getConnection() 123|HikariPool-1 - Start completed.
+2020-07-16 16:02:38.451|INFO |taskScheduler-1|taskScheduler-1|org.hibernate.jpa.internal.util.LogHelper.logPersistenceUnitInformation() 31|HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-07-16 16:02:38.587|INFO |taskScheduler-1|taskScheduler-1|org.hibernate.Version.logVersion() 44|HHH000412: Hibernate ORM core version 5.4.15.Final
+2020-07-16 16:02:38.656|INFO |main|main|org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.initialize() 181|Initializing ExecutorService
+2020-07-16 16:02:38.959|INFO |taskScheduler-1|taskScheduler-1|org.hibernate.annotations.common.Version.<clinit>() 49|HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-07-16 16:02:39.264|INFO |taskScheduler-1|taskScheduler-1|org.hibernate.dialect.Dialect.<init>() 172|HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2020-07-16 16:02:39.593|WARN |taskScheduler-1|taskScheduler-1|org.hibernate.id.UUIDHexGenerator.<init>() 42|HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2020-07-16 16:02:40.605|WARN |main|main|org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor() 220|spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-07-16 16:02:40.945|INFO |taskScheduler-1|taskScheduler-1|org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator.initiateService() 52|HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-07-16 16:02:40.963|INFO |taskScheduler-1|taskScheduler-1|org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory() 416|Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-07-16 16:02:41.351|INFO |main|main|springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping.initHandlerMethods() 69|Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-16 16:02:41.432|WARN |main|main|com.netflix.config.sources.URLConfigurationSource.<init>() 121|No URLs will be polled as dynamic configuration sources.
+2020-07-16 16:02:41.432|INFO |main|main|com.netflix.config.sources.URLConfigurationSource.<init>() 122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-16 16:02:41.440|WARN |main|main|com.netflix.config.sources.URLConfigurationSource.<init>() 121|No URLs will be polled as dynamic configuration sources.
+2020-07-16 16:02:41.440|INFO |main|main|com.netflix.config.sources.URLConfigurationSource.<init>() 122|To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-16 16:02:44.292|WARN |main|main|org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger.logWarning() 86|You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-16 16:02:44.546|INFO |main|main|org.springframework.cloud.netflix.eureka.InstanceInfoFactory.create() 72|Setting initial instance status as: STARTING
+2020-07-16 16:02:44.595|INFO |main|main|com.netflix.discovery.DiscoveryClient.<init>() 371|Initializing Eureka in region us-east-1
+2020-07-16 16:02:44.695|INFO |main|main|com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>() 70|Using JSON encoding codec LegacyJacksonJson
+2020-07-16 16:02:44.695|INFO |main|main|com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>() 71|Using JSON decoding codec LegacyJacksonJson
+2020-07-16 16:02:44.916|INFO |main|main|com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>() 80|Using XML encoding codec XStreamXml
+2020-07-16 16:02:44.917|INFO |main|main|com.netflix.discovery.provider.DiscoveryJerseyProvider.<init>() 81|Using XML decoding codec XStreamXml
+2020-07-16 16:02:45.233|INFO |main|main|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:02:45.774|INFO |main|main|com.netflix.discovery.DiscoveryClient.fetchRegistry() 988|Disable delta property : false
+2020-07-16 16:02:45.774|INFO |main|main|com.netflix.discovery.DiscoveryClient.fetchRegistry() 989|Single vip registry refresh property : null
+2020-07-16 16:02:45.774|INFO |main|main|com.netflix.discovery.DiscoveryClient.fetchRegistry() 990|Force full registry fetch : false
+2020-07-16 16:02:45.774|INFO |main|main|com.netflix.discovery.DiscoveryClient.fetchRegistry() 991|Application is null : false
+2020-07-16 16:02:45.775|INFO |main|main|com.netflix.discovery.DiscoveryClient.fetchRegistry() 992|Registered Applications size is zero : true
+2020-07-16 16:02:45.775|INFO |main|main|com.netflix.discovery.DiscoveryClient.fetchRegistry() 994|Application version is -1: true
+2020-07-16 16:02:45.776|INFO |main|main|com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry() 1077|Getting all instance registry info from the eureka server
+2020-07-16 16:02:46.162|INFO |main|main|com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry() 1086|The response status is 200
+2020-07-16 16:02:46.164|INFO |main|main|com.netflix.discovery.DiscoveryClient.initScheduledTasks() 1301|Starting heartbeat executor: renew interval is: 30
+2020-07-16 16:02:46.168|INFO |main|main|com.netflix.discovery.InstanceInfoReplicator.<init>() 60|InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-16 16:02:46.173|INFO |main|main|com.netflix.discovery.DiscoveryClient.<init>() 475|Discovery Client initialized at timestamp 1594886566171 with initial instances count: 0
+2020-07-16 16:02:46.176|INFO |main|main|org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.register() 41|Registering application EUREKA-PROVIDER-DEMO-MY with eureka with status UP
+2020-07-16 16:02:46.177|INFO |main|main|com.netflix.discovery.DiscoveryClient.notify() 1337|Saw local status change event StatusChangeEvent [timestamp=1594886566177, current=UP, previous=STARTING]
+2020-07-16 16:02:46.179|INFO |DiscoveryClient-InstanceInfoReplicator-0|DiscoveryClient-InstanceInfoReplicator-0|com.netflix.discovery.DiscoveryClient.register() 854|DiscoveryClient_EUREKA-PROVIDER-DEMO-MY/eureka-provider-demo-my:31002: registering service...
+2020-07-16 16:02:46.180|INFO |main|main|org.apache.coyote.http11.Http11NioProtocol.log() 173|Starting ProtocolHandler ["http-nio-31002"]
+2020-07-16 16:02:46.227|INFO |main|main|org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start() 220|Tomcat started on port(s): 31002 (http) with context path ''
+2020-07-16 16:02:46.228|INFO |main|main|org.springframework.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration.onApplicationEvent() 145|Updating port to 31002
+2020-07-16 16:02:46.326|INFO |DiscoveryClient-InstanceInfoReplicator-0|DiscoveryClient-InstanceInfoReplicator-0|com.netflix.discovery.DiscoveryClient.register() 863|DiscoveryClient_EUREKA-PROVIDER-DEMO-MY/eureka-provider-demo-my:31002 - registration status: 204
+2020-07-16 16:02:47.101|INFO |main|main|springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start() 147|Context refreshed
+2020-07-16 16:02:47.109|INFO |main|main|springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper.start() 150|Found 1 custom documentation plugin(s)
+2020-07-16 16:02:47.147|INFO |main|main|springfox.documentation.spring.web.scanners.ApiListingReferenceScanner.scan() 41|Scanning for api listing references
+2020-07-16 16:02:47.290|INFO |main|main|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 16:02:47.370|INFO |main|main|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection() 497|Created new connection: rabbitConnectionFactory#37753b69:0/SimpleConnection@a07479d [delegate=amqp://guest@192.168.106.129:5672/, localPort= 55072]
+2020-07-16 16:02:47.507|INFO |main|main|org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent() 49|Triggering deferred initialization of Spring Data repositories…
+2020-07-16 16:02:47.819|INFO |main|main|org.springframework.data.repository.config.DeferredRepositoryInitializationListener.onApplicationEvent() 53|Spring Data repositories initialized!
+2020-07-16 16:02:47.833|INFO |main|main|com.adam.EurekaServerProviderApplication.logStarted() 61|Started EurekaServerProviderApplication in 36.013 seconds (JVM running for 40.443)
+2020-07-16 16:03:00.151|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:03:16.166|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.fetchRegistry() 988|Disable delta property : false
+2020-07-16 16:03:16.166|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.fetchRegistry() 989|Single vip registry refresh property : null
+2020-07-16 16:03:16.166|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.fetchRegistry() 990|Force full registry fetch : false
+2020-07-16 16:03:16.166|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.fetchRegistry() 991|Application is null : false
+2020-07-16 16:03:16.166|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.fetchRegistry() 992|Registered Applications size is zero : true
+2020-07-16 16:03:16.166|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.fetchRegistry() 994|Application version is -1: false
+2020-07-16 16:03:16.166|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry() 1077|Getting all instance registry info from the eureka server
+2020-07-16 16:03:16.227|INFO |DiscoveryClient-CacheRefreshExecutor-0|DiscoveryClient-CacheRefreshExecutor-0|com.netflix.discovery.DiscoveryClient.getAndStoreFullRegistry() 1086|The response status is 200
+2020-07-16 16:03:30.007|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:04:00.007|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:04:30.011|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:05:00.015|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:05:08.459|INFO |http-nio-31002-exec-1|http-nio-31002-exec-1|org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].log() 173|Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-16 16:05:08.459|INFO |http-nio-31002-exec-1|http-nio-31002-exec-1|org.springframework.web.servlet.DispatcherServlet.initServletBean() 525|Initializing Servlet 'dispatcherServlet'
+2020-07-16 16:05:08.472|INFO |http-nio-31002-exec-1|http-nio-31002-exec-1|org.springframework.web.servlet.DispatcherServlet.initServletBean() 547|Completed initialization in 13 ms
+2020-07-16 16:05:30.009|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:06:00.011|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:06:30.006|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:07:00.018|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:07:30.013|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:07:45.779|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:08:00.007|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:08:30.007|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:09:00.009|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:09:30.007|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:10:00.009|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:10:30.008|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:11:00.008|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:11:30.009|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:12:00.006|INFO |taskScheduler-1|taskScheduler-1|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:12:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:12:45.780|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:13:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:13:30.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:14:00.020|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:14:30.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:15:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:15:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:16:00.015|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:16:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:17:00.015|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:17:30.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:17:45.782|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:18:00.014|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:18:30.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:19:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:19:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:20:00.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:20:30.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:21:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:21:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:22:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:22:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:22:45.784|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:23:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:23:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:24:00.015|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:24:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:25:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:25:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:26:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:26:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:27:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:27:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:27:45.786|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:28:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:28:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:29:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:29:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:30:00.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:30:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:31:00.024|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:31:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:32:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:32:30.022|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:32:45.787|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:33:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:33:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:34:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:34:30.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:35:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:35:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:36:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:36:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:37:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:37:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:37:45.789|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:38:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:38:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:39:00.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:39:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:40:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:40:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:41:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:41:30.015|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:42:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:42:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:42:45.791|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:43:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:43:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:44:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:44:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:45:00.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:45:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:46:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:46:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:47:00.014|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:47:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:47:45.792|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:48:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:48:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:49:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:49:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:50:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:50:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:51:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:51:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:52:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:52:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:52:45.793|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:53:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:53:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:54:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:54:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:55:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:55:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:56:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:56:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:57:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:57:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:57:45.799|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 16:58:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:58:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:59:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 16:59:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:00:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:00:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:01:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:01:30.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:02:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:02:30.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:02:45.800|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:03:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:03:30.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:04:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:04:30.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:05:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:05:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:06:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:06:30.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:07:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:07:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:07:45.802|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:08:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:08:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:09:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:09:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:10:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:10:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:11:00.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:11:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:12:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:12:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:12:45.807|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:13:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:13:30.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:14:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:14:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:15:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:15:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:16:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:16:30.011|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:17:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:17:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:17:45.808|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:18:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:18:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:19:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:19:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:20:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:20:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:21:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:21:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:22:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:22:30.017|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:22:45.810|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:23:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:23:30.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:24:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:24:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:25:00.014|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:25:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:26:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:26:30.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:27:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:27:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:27:45.815|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:28:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:28:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:29:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:29:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:30:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:30:30.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:31:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:31:30.021|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:32:00.014|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:32:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:32:45.816|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:33:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:33:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:34:00.011|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:34:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:35:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:35:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:36:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:36:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:37:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:37:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:37:45.819|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:38:00.016|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:38:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:39:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:39:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:40:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:40:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:41:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:41:30.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:42:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:42:30.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:42:45.820|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:43:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:43:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:44:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:44:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:45:00.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:45:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:46:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:46:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:47:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:47:30.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:47:45.826|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 17:48:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:48:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:49:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:49:30.011|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:50:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:50:30.011|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:51:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 17:51:04.793|WARN |AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|com.rabbitmq.client.impl.ForgivingExceptionHandler.log() 115|An unexpected connection driver error occured (Exception message: Connection reset)
+2020-07-16 17:51:04.867|ERROR|AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.log() 1566|Channel shutdown: connection error
+2020-07-16 17:51:05.043|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.killOrRestart() 1424|Restarting Consumer@548bdfda: tags=[[amq.ctag-AwaZMlPpSJ71E-jhyfOycg]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.106.129:5672/,1), conn: Proxy@7b48b933 Shared Rabbit Connection: SimpleConnection@a07479d [delegate=amqp://guest@192.168.106.129:5672/, localPort= 55072], acknowledgeMode=AUTO local queue size=0
+2020-07-16 17:51:05.141|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 18:17:31.709|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 1 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 18:17:32.840|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 2 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: No route to host: connect]
+2020-07-16 18:17:33.830|WARN |HikariPool-1 housekeeper|HikariPool-1 housekeeper|com.zaxxer.hikari.pool.HikariPool.run() 787|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=26m55s74ms511µs300ns).
+2020-07-16 18:17:35.903|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 4 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 18:17:40.904|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 8 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 18:17:48.912|ERROR|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary() 1817|Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:510) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:751) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:702) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:676) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:567) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:102) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1430) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2095) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2062) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2042) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:407) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:391) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1830) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1811) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1342) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_211]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_211]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_211]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_211]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.9.0.jar:5.9.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:526) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:473) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	... 16 more
+2020-07-16 18:17:48.913|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 18:17:49.906|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 16 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 18:25:33.400|WARN |HikariPool-1 housekeeper|HikariPool-1 housekeeper|com.zaxxer.hikari.pool.HikariPool.run() 787|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m59s575ms94µs600ns).
+2020-07-16 18:25:35.351|WARN |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.logConsumerException() 1445|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2020-07-16 18:25:35.351|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-2|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.killOrRestart() 1424|Restarting Consumer@8849f93: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2020-07-16 18:25:35.352|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 18:25:36.464|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 32 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 18:25:38.386|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection() 497|Created new connection: rabbitConnectionFactory#37753b69:3/SimpleConnection@2126af45 [delegate=amqp://guest@192.168.106.129:5672/, localPort= 65258]
+2020-07-16 18:25:42.164|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:26:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:26:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:26:40.264|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 18:27:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:27:25.631|WARN |AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|com.rabbitmq.client.impl.ForgivingExceptionHandler.log() 115|An unexpected connection driver error occured (Exception message: Connection reset)
+2020-07-16 18:27:25.631|ERROR|AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.log() 1566|Channel shutdown: connection error
+2020-07-16 18:29:23.185|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-3|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.killOrRestart() 1424|Restarting Consumer@505406f2: tags=[[amq.ctag-XvZqoAvfemhymXGpi4-e2A]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.106.129:5672/,1), conn: Proxy@7b48b933 Shared Rabbit Connection: SimpleConnection@2126af45 [delegate=amqp://guest@192.168.106.129:5672/, localPort= 65258], acknowledgeMode=AUTO local queue size=0
+2020-07-16 18:29:23.186|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 1 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 18:29:23.568|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 18:29:23.569|ERROR|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary() 1817|Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.NoRouteToHostException: No route to host: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:510) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:751) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:702) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:676) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:567) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:102) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1430) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2095) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2062) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2042) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:407) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:391) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1830) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1811) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1342) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_211]
+Caused by: java.net.NoRouteToHostException: No route to host: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_211]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_211]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_211]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.9.0.jar:5.9.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:526) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:473) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	... 16 more
+2020-07-16 18:29:23.570|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 18:29:24.237|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 2 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: No route to host: connect]
+2020-07-16 18:29:26.230|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@478fe02f (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.245|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@472ace1a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.283|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@1ee5c9cf (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.286|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@fae8e17 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.288|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@2c5651be (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.291|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@72c8f66 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.294|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@37b795fd (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.296|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c127b2a (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.299|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@52d708b7 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:26.302|WARN |taskScheduler-2|taskScheduler-2|com.zaxxer.hikari.pool.PoolBase.isConnectionAlive() 184|HikariPool-1 - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@31e3ea34 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-07-16 18:29:27.245|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 4 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 18:29:28.610|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-4|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.killOrRestart() 1424|Restarting Consumer@3906bad8: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2020-07-16 18:29:28.634|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 18:29:29.624|WARN |HikariPool-1 housekeeper|HikariPool-1 housekeeper|com.zaxxer.hikari.pool.HikariPool.run() 787|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m26s222ms951µs200ns).
+2020-07-16 18:29:30.386|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection() 497|Created new connection: rabbitConnectionFactory#37753b69:6/SimpleConnection@11bbc73b [delegate=amqp://guest@192.168.106.129:5672/, localPort= 49165]
+2020-07-16 18:29:47.651|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:30:00.017|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:30:30.004|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:31:00.016|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:31:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:32:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:32:30.011|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:33:00.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:33:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:33:36.484|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 18:34:00.025|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:34:30.013|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:35:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:35:30.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:36:00.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:36:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:37:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:37:30.005|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:38:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:38:30.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:38:36.485|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 18:39:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:39:30.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:40:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:40:30.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:41:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:41:30.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:42:00.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:42:30.008|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:43:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:43:30.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:43:36.487|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 18:44:00.007|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:44:30.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:45:00.010|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:45:30.006|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:46:00.015|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:46:30.009|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:47:00.012|INFO |taskScheduler-2|taskScheduler-2|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:47:30.011|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:48:00.006|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:48:30.007|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:48:36.488|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 18:49:00.006|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:49:30.009|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:50:00.006|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:50:30.013|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:51:00.009|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:51:30.007|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:52:00.011|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:52:30.009|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:53:00.012|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:53:30.010|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:53:36.489|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-16 18:54:00.007|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:54:30.007|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:55:00.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:55:30.010|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 18:55:32.069|WARN |AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|com.rabbitmq.client.impl.ForgivingExceptionHandler.log() 115|An unexpected connection driver error occured (Exception message: Connection reset)
+2020-07-16 18:55:32.070|ERROR|AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.log() 1566|Channel shutdown: connection error
+2020-07-16 18:55:32.382|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-5|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.killOrRestart() 1424|Restarting Consumer@11546270: tags=[[amq.ctag-pi2_kr7pv4nRMdeho8cD-A]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.106.129:5672/,1), conn: Proxy@7b48b933 Shared Rabbit Connection: SimpleConnection@11bbc73b [delegate=amqp://guest@192.168.106.129:5672/, localPort= 49165], acknowledgeMode=AUTO local queue size=0
+2020-07-16 18:55:32.409|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 19:07:55.596|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 1 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 19:07:56.597|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 2 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: No route to host: connect]
+2020-07-16 19:07:59.605|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 4 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 19:08:04.606|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 8 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 19:08:13.607|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 16 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-16 19:08:14.938|ERROR|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary() 1817|Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:61) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:510) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:751) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:702) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:676) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:567) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:102) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1430) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2095) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2062) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2042) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:407) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:391) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1830) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1811) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1342) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_211]
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_211]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_211]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_211]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.9.0.jar:5.9.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:526) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:473) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	... 16 more
+2020-07-16 19:08:14.942|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 19:08:22.213|WARN |HikariPool-1 housekeeper|HikariPool-1 housekeeper|com.zaxxer.hikari.pool.HikariPool.run() 787|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=12m52s527ms513µs900ns).
+2020-07-16 19:08:40.959|WARN |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.logConsumerException() 1445|Consumer raised exception, processing can restart if the connection factory supports it. Exception summary: org.springframework.amqp.AmqpConnectException: java.net.ConnectException: Connection timed out: connect
+2020-07-16 19:08:40.959|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-6|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.killOrRestart() 1424|Restarting Consumer@529e9440: tags=[[]], channel=null, acknowledgeMode=AUTO local queue size=0
+2020-07-16 19:08:40.959|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 19:08:40.970|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection() 497|Created new connection: rabbitConnectionFactory#37753b69:9/SimpleConnection@6fbd2044 [delegate=amqp://guest@192.168.106.129:5672/, localPort= 51698]
+2020-07-16 19:08:43.503|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 19:09:00.017|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 19:09:30.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 19:10:00.014|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-16 19:10:13.883|WARN |AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|com.rabbitmq.client.impl.ForgivingExceptionHandler.log() 115|An unexpected connection driver error occured (Exception message: Connection reset)
+2020-07-16 19:10:13.883|ERROR|AMQP Connection 192.168.106.129:5672|AMQP Connection 192.168.106.129:5672|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.log() 1566|Channel shutdown: connection error
+2020-07-16 19:10:14.057|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-7|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.killOrRestart() 1424|Restarting Consumer@65cc59e4: tags=[[amq.ctag-nOFxUWhahnOhfkNWQYcZCQ]], channel=Cached Rabbit Channel: AMQChannel(amqp://guest@192.168.106.129:5672/,1), conn: Proxy@7b48b933 Shared Rabbit Connection: SimpleConnection@6fbd2044 [delegate=amqp://guest@192.168.106.129:5672/, localPort= 51698], acknowledgeMode=AUTO local queue size=0
+2020-07-16 19:10:14.107|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-16 22:10:14.975|ERROR|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.redeclareElementsIfNecessary() 1817|Failed to check/redeclare auto-delete queue(s).
+org.springframework.amqp.AmqpIOException: java.net.SocketException: Software caused connection abort: connect
+	at org.springframework.amqp.rabbit.support.RabbitExceptionTranslator.convertRabbitAccessException(RabbitExceptionTranslator.java:70) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:510) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createConnection(CachingConnectionFactory.java:751) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareChannel(CachingConnectionFactory.java:702) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getCachedChannelProxy(CachingConnectionFactory.java:676) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.getChannel(CachingConnectionFactory.java:567) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory.access$1600(CachingConnectionFactory.java:102) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.CachingConnectionFactory$ChannelCachingConnectionProxy.createChannel(CachingConnectionFactory.java:1430) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.doExecute(RabbitTemplate.java:2095) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2062) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitTemplate.execute(RabbitTemplate.java:2042) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueInfo(RabbitAdmin.java:407) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.core.RabbitAdmin.getQueueProperties(RabbitAdmin.java:391) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.attemptDeclarations(AbstractMessageListenerContainer.java:1830) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.redeclareElementsIfNecessary(AbstractMessageListenerContainer.java:1811) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.initialize(SimpleMessageListenerContainer.java:1342) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1188) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_211]
+Caused by: java.net.SocketException: Software caused connection abort: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method) ~[?:1.8.0_211]
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206) ~[?:1.8.0_211]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188) ~[?:1.8.0_211]
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172) ~[?:1.8.0_211]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392) ~[?:1.8.0_211]
+	at java.net.Socket.connect(Socket.java:589) ~[?:1.8.0_211]
+	at com.rabbitmq.client.impl.SocketFrameHandlerFactory.create(SocketFrameHandlerFactory.java:60) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1137) ~[amqp-client-5.9.0.jar:5.9.0]
+	at com.rabbitmq.client.ConnectionFactory.newConnection(ConnectionFactory.java:1087) ~[amqp-client-5.9.0.jar:5.9.0]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.connect(AbstractConnectionFactory.java:526) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.amqp.rabbit.connection.AbstractConnectionFactory.createBareConnection(AbstractConnectionFactory.java:473) ~[spring-rabbit-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	... 16 more
+2020-07-16 19:10:14.885|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 1 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-17 08:43:34.052|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.connect() 524|Attempting to connect to: [192.168.106.129:5672]
+2020-07-17 08:43:34.052|WARN |HikariPool-1 housekeeper|HikariPool-1 housekeeper|com.zaxxer.hikari.pool.HikariPool.run() 787|HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h33m45s552ms738µs).
+2020-07-17 08:43:36.055|WARN |Apollo-RemoteConfigLongPollService-1|Apollo-RemoteConfigLongPollService-1|com.ctrip.framework.apollo.internals.RemoteConfigLongPollService.doLongPollingRefresh() 193|Long polling failed, will retry in 2 seconds. appId: user-service, cluster: default, namespaces: application, long polling url: http://192.168.106.129:8080/notifications/v2?cluster=default&appId=user-service&ip=192.168.101.138&notifications=%5B%7B%22namespaceName%22%3A%22application%22%2C%22notificationId%22%3A18%7D%5D, reason: Could not complete get operation [Cause: connect timed out]
+2020-07-17 08:43:37.783|INFO |org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-8|org.springframework.amqp.rabbit.connection.CachingConnectionFactory.createBareConnection() 497|Created new connection: rabbitConnectionFactory#37753b69:11/SimpleConnection@7cb7a7c2 [delegate=amqp://guest@192.168.106.129:5672/, localPort= 51945]
+2020-07-17 08:43:39.295|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:44:00.018|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:44:06.895|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-17 08:44:30.007|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:45:00.024|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:45:30.008|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:46:00.018|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:46:30.008|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:47:00.009|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:47:30.011|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:48:00.006|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:48:30.010|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:49:00.008|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:49:06.896|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-17 08:49:30.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:50:00.015|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:50:30.009|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:51:00.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:51:30.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:52:00.013|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:52:30.012|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:53:00.008|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:53:30.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:54:00.012|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:54:06.903|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-17 08:54:30.010|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:55:00.010|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:55:30.007|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:56:00.006|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:56:30.008|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:57:00.009|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:57:30.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:58:00.011|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:58:30.006|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:59:00.006|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 08:59:06.904|INFO |AsyncResolver-bootstrap-executor-0|AsyncResolver-bootstrap-executor-0|com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver.getClusterEndpoints() 43|Resolving eureka endpoints via configuration
+2020-07-17 08:59:30.010|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 09:00:00.005|INFO |taskScheduler-3|taskScheduler-3|com.adam.demo.mq.ChooseCourseTask.sendChoosecourseTask() 50|===========选课任务==========[]
+2020-07-17 09:00:02.011|INFO |SpringContextShutdownHook|SpringContextShutdownHook|org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry.deregister() 65|Unregistering application EUREKA-PROVIDER-DEMO-MY with eureka with status DOWN
+2020-07-17 09:00:02.013|WARN |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.notify() 1335|Saw local status change event StatusChangeEvent [timestamp=1594947602011, current=DOWN, previous=UP]
+2020-07-17 09:00:02.013|INFO |DiscoveryClient-InstanceInfoReplicator-0|DiscoveryClient-InstanceInfoReplicator-0|com.netflix.discovery.DiscoveryClient.register() 854|DiscoveryClient_EUREKA-PROVIDER-DEMO-MY/eureka-provider-demo-my:31002: registering service...
+2020-07-17 09:00:02.051|INFO |DiscoveryClient-InstanceInfoReplicator-0|DiscoveryClient-InstanceInfoReplicator-0|com.netflix.discovery.DiscoveryClient.register() 863|DiscoveryClient_EUREKA-PROVIDER-DEMO-MY/eureka-provider-demo-my:31002 - registration status: 204
+2020-07-17 09:00:02.115|INFO |SpringContextShutdownHook|SpringContextShutdownHook|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown() 645|Waiting for workers to finish.
+2020-07-17 09:00:02.343|INFO |SpringContextShutdownHook|SpringContextShutdownHook|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doShutdown() 648|Successfully waited for workers to finish.
+2020-07-17 09:00:03.618|INFO |SpringContextShutdownHook|SpringContextShutdownHook|org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.shutdown() 1231|Shutdown ignored - container is not active already
+2020-07-17 09:00:03.754|INFO |SpringContextShutdownHook|SpringContextShutdownHook|org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown() 218|Shutting down ExecutorService
+2020-07-17 09:00:03.756|INFO |SpringContextShutdownHook|SpringContextShutdownHook|org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.destroy() 598|Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-07-17 09:00:03.780|INFO |SpringContextShutdownHook|SpringContextShutdownHook|org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler.shutdown() 218|Shutting down ExecutorService 'taskScheduler'
+2020-07-17 09:00:03.783|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.zaxxer.hikari.HikariDataSource.close() 350|HikariPool-1 - Shutdown initiated...
+2020-07-17 09:00:03.792|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.zaxxer.hikari.HikariDataSource.close() 352|HikariPool-1 - Shutdown completed.
+2020-07-17 09:00:03.794|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.shutdown() 916|Shutting down DiscoveryClient ...
+2020-07-17 09:00:06.805|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.unregister() 952|Unregistering ...
+2020-07-17 09:00:06.846|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.unregister() 954|DiscoveryClient_EUREKA-PROVIDER-DEMO-MY/eureka-provider-demo-my:31002 - deregister  status: 200
+2020-07-17 09:00:06.896|INFO |SpringContextShutdownHook|SpringContextShutdownHook|com.netflix.discovery.DiscoveryClient.shutdown() 941|Completed shut down of DiscoveryClient
